@@ -152,7 +152,7 @@ const GoToHome = function(data, json) {
     if (data === 'Deze gebruiker bestaat niet') {
         postGebruikerAndScore(json);
         putAvatarAuto();
-    } else location.assign('../Index.html');
+    } else location.assign('../index.html');
 };
 
 const shuffle = function(array) {

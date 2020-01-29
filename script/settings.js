@@ -20,7 +20,7 @@ const deleteAccount = function() {
         if (data === 'Het opgegeven wachtwoord is niet juist') domWachtwoordError.innerHTML = data;
         else if (data === 'De leerkracht is verwijderd') {
           deleteCookie('leerkracht');
-          location.assign('Index.html');
+          location.assign('index.html');
         } else domWachtwoordError.innerHTML = 'Er is een probleem opgetreden';
       },
       null,
@@ -292,7 +292,7 @@ const listenToSelectAll = function() {
 
 const listenToHeaderIcon = function() {
   domHeaderIcon.addEventListener('click', function() {
-    location.assign('Index.html');
+    location.assign('index.html');
   });
 };
 
