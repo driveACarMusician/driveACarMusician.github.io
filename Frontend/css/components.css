@@ -1,0 +1,12 @@
+.c-avatars {
+    display: inline-block;
+    overflow: hidden;
+    max-width: 390px;
+    max-height: 120px;
+}
+
+.c-avatars__img {
+    display: inline;
+    margin: 0 5px;
+    max-width: 120px;
+}

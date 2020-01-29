@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<title>Start</title>
+		<meta name="Start" content="Start page." />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://fonts.googleapis.com/css?family=Signika&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet" />
+
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+		<link rel="manifest" href="site.webmanifest" />
+		<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#43dde6" />
+		<meta name="theme-color" content="#ffffff" />
+
+		<link rel="stylesheet" href="css/start.css" />
+
+		<script src="script/dataHandler.js"></script>
+		<script src="script/start.js"></script>
+	</head>
+	<body>
+		<div class="o-row__header o-row__header-style ">
+			<div class="o-container__header o-container__header-style">
+				<div class="c-header c-header__title">
+					<h2 id="leerkracht"></h2>
+				</div>
+			</div>
+		</div>
+		<div style="display: none;" id="overlayAvatar" class="c-dark-transparent-div">
+			<div class="o-row__overlay">
+				<div class="o-container__overlay">
+					<div class="c-card__carousel">
+						<form class="c-card--popup js-form">
+							<svg class="c-icon--close js-close" fill="#787878" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+								<path d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z" />
+							</svg>
+							<div class="c-card__body__carousel">
+								<h1 class="c-card__title__carousel">Kies je avatar</h1>
+								<div class="c-carousel">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="rightAvatar">
+										<path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+										<path d="M0 0h24v24H0z" fill="none" />
+									</svg>
+									<div class="c-carousel__body">
+										<div class="c-carousel__items" style="margin-left: 0px; margin-right: 0px;" id="avatars"></div>
+									</div>
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="leftAvatar">
+										<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+										<path d="M0 0h24v24H0z" fill="none" />
+									</svg>
+								</div>
+								<div class="c-button c-button__avatar" id="selectAvatar">
+									Gereed
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="display: none;" id="overlayCar" class="c-dark-transparent-div">
+			<div class="o-row__overlay">
+				<div class="o-container__overlay">
+					<div class="c-card__carousel">
+						<form class="c-card--popup js-form">
+							<svg class="c-icon--close js-close" fill="#787878" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+								<path d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z" />
+							</svg>
+							<div class="c-card__body__carousel">
+								<h1 class="c-card__title__carousel">Kies je racewagen</h1>
+								<div class="c-carousel">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="rightCar">
+										<path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+										<path d="M0 0h24v24H0z" fill="none" />
+									</svg>
+									<div class="c-carousel__body">
+										<div class="c-carousel__items" style="margin-left: 0px; margin-right: 0px;" id="cars"></div>
+									</div>
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="leftCar">
+										<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+										<path d="M0 0h24v24H0z" fill="none" />
+									</svg>
+								</div>
+								<div class="c-button c-button__avatar" id="selectCar">
+									Gereed
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="o-row">
+			<div class="o-container">
+				<div class="c-card">
+					<p class="c-head">Race je rijk</p>
+					<p class="c-text">Vang zo veel mogelijk munten <br />en ontwijk alle obstakels.</p>
+					<p class="c-title">Kies je avatar en racewagen:</p>
+
+					<div class="c-customization__flex">
+						<div class="c-customization">
+							<div class="c-customization--profile js-avatar">
+								<img class="c-customization--profile__size" id="avatar" src="https://driveacarmusiciangroep2.blob.core.windows.net/avatars/67cf8a8a-3ccd-424c-9c1c-cdcbf03854e3.png" alt="Avatar" />
+								<div class="c-customization--edit ">
+									<svg id="edit_avatar" data-name="edit avatar" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+										<g id="Ellipse_9" data-name="Ellipse 9" fill="#fff" stroke="#787878" stroke-width="1">
+											<circle cx="16" cy="16" r="16" stroke="none" />
+											<circle cx="16" cy="16" r="15.5" fill="none" />
+										</g>
+										<path id="Path_108" data-name="Path 108" d="M133.484,132.685l10.507-10.505,3.232,3.233-10.507,10.5Zm0,0" transform="translate(-123.949 -113.453)" fill="#787878" />
+										<path id="Path_109" data-name="Path 109" d="M294.311,90.169a2.274,2.274,0,0,0-1.616.669l-.808.809,3.233,3.233.807-.809a2.286,2.286,0,0,0-1.617-3.9Zm0,0" transform="translate(-271.037 -83.727)" fill="#787878" />
+										<path id="Path_110" data-name="Path 110" d="M106.535,288.163l4.1-1.367-2.733-2.733Zm0,0" transform="translate(-98.925 -263.773)" fill="#787878" />
+										<path id="Path_111" data-name="Path 111" d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm9.7,11.152L13.076,23.771,5.8,26.2l2.426-7.273L20.849,6.3A3.429,3.429,0,0,1,25.7,11.152Zm0,0" fill="#787878" />
+									</svg>
+								</div>
+							</div>
+							<div class="c-customization--profile js-car">
+								<img class="c-customization--profile__size" id="car" src="https://driveacarmusiciangroep2.blob.core.windows.net/autos/612fc52d-bf38-4187-bc9d-03026f0f55c8.png" alt="Car" />
+								<div class="c-customization--edit ">
+									<svg id="edit_avatar" data-name="edit avatar" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+										<g id="Ellipse_9" data-name="Ellipse 9" fill="#fff" stroke="#787878" stroke-width="1">
+											<circle cx="16" cy="16" r="16" stroke="none" />
+											<circle cx="16" cy="16" r="15.5" fill="none" />
+										</g>
+										<path id="Path_108" data-name="Path 108" d="M133.484,132.685l10.507-10.505,3.232,3.233-10.507,10.5Zm0,0" transform="translate(-123.949 -113.453)" fill="#787878" />
+										<path id="Path_109" data-name="Path 109" d="M294.311,90.169a2.274,2.274,0,0,0-1.616.669l-.808.809,3.233,3.233.807-.809a2.286,2.286,0,0,0-1.617-3.9Zm0,0" transform="translate(-271.037 -83.727)" fill="#787878" />
+										<path id="Path_110" data-name="Path 110" d="M106.535,288.163l4.1-1.367-2.733-2.733Zm0,0" transform="translate(-98.925 -263.773)" fill="#787878" />
+										<path id="Path_111" data-name="Path 111" d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm9.7,11.152L13.076,23.771,5.8,26.2l2.426-7.273L20.849,6.3A3.429,3.429,0,0,1,25.7,11.152Zm0,0" fill="#787878" />
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="u-center-horizontal">
+						<div class="c-naam js-herlaad-fotos-error"></div>
+					</div>
+					<div class="u-center-horizontal">
+						<input type="button" class="o-button-reset c-form-field--link js-herlaad-fotos-link" value="Herlaad avatar/auto" />
+					</div>
+					<div class="c-input__naam c-naam js-naam-error"></div>
+					<div class="c-input__padding c-form-field">
+						<label class="c-label c-label--floating js-naam-label" for="naam">Naam</label>
+						<input class="c-input" type="text" name="naam" id="naam" required />
+					</div>
+					<div class="c-nav">
+						<a href="Index.html">
+							<div class="c-button c-button__home">
+								Home
+								<div class="c-button__padding">
+									<svg class="c-svg__home" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+										<path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+										<path d="M0 0h24v24H0z" fill="none" />
+									</svg>
+								</div>
+							</div>
+						</a>
+
+						<div class="c-button c-button__next js-play">
+							Start
+							<div class="c-button__padding">
+								<svg class="c-svg__play" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+									<path d="M8 5v14l11-7z" />
+									<path d="M0 0h24v24H0z" fill="none" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

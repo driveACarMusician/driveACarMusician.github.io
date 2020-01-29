@@ -1,0 +1,1193 @@
+/*------------------------------------*\
+FONTS
+\*------------------------------------*/
+
+/*------------------------------------*\
+Variables
+\*------------------------------------*/
+:root {
+	--global-color-black: black;
+	--global-color-white: white;
+
+	--global-color-alpha-pink: #fc5185;
+	--global-color-alpha-blue-dark: #364f6b;
+	--global-color-alpha-blue-light: #43dde6;
+	--global-color-alpha-white: #f0f0f0;
+	--global-color-alpha-blue: #3385ff;
+	--global-color-alpha-red: #ff3333;
+	--global-color-alpha-yellow-dark: #ffc349;
+	--global-color-alpha-yellow: #ffd172;
+	--global-color-alpha-yellow: #ffe1a4;
+
+	--global-color-grey-1: #fefefe;
+	--global-color-grey-2: #fcfcfc;
+	--global-color-grey-3: #fbfbfb;
+	--global-color-grey-4: #f9f9f9;
+	--global-color-grey-5: #f8f8f8;
+	--global-color-grey-6: #f6f6f6;
+	--global-color-grey-7: #f5f5f5;
+	--global-color-grey-8: #f3f3f3;
+	--global-color-grey-9: #f2f2f2;
+	--global-color-grey-10: #f0f0f0;
+	--global-color-grey-11: #d8d8d8;
+	--global-color-grey-12: #c0c0c0;
+	--global-color-grey-13: #a8a8a8;
+	--global-color-grey-14: #909090;
+	--global-color-grey-15: #787878;
+	--global-color-grey-16: #606060;
+	--global-color-grey-17: #484848;
+	--global-color-grey-18: #303030;
+	--global-color-grey-19: #181818;
+
+	--global-color-pink-1: #ffeef3;
+	--global-color-pink-2: #fedce7;
+	--global-color-pink-3: #fecbda;
+	--global-color-pink-4: #feb9ce;
+	--global-color-pink-5: #fea8c2;
+	--global-color-pink-6: #fd97b6;
+	--global-color-pink-7: #fd85aa;
+	--global-color-pink-8: #fd749d;
+	--global-color-pink-9: #fc6291;
+	--global-color-pink-10: #fc5185;
+	--global-color-pink-11: #e34978;
+	--global-color-pink-12: #ca416a;
+	--global-color-pink-13: #b0395d;
+	--global-color-pink-14: #973150;
+	--global-color-pink-15: #7e2943;
+	--global-color-pink-16: #652035;
+	--global-color-pink-17: #4c1828;
+	--global-color-pink-18: #32101b;
+	--global-color-pink-19: #19080d;
+
+	--global-color-blue-1: #ebedf0;
+	--global-color-blue-2: #d7dce1;
+	--global-color-blue-3: #c3cad3;
+	--global-color-blue-4: #afb9c4;
+	--global-color-blue-5: #9ba7b5;
+	--global-color-blue-6: #8695a6;
+	--global-color-blue-7: #728497;
+	--global-color-blue-8: #5e7289;
+	--global-color-blue-9: #4a617a;
+	--global-color-blue-10: #364f6b;
+	--global-color-blue-11: #314760;
+	--global-color-blue-12: #2b3f56;
+	--global-color-blue-13: #26374b;
+	--global-color-blue-14: #202f40;
+	--global-color-blue-15: #1b2836;
+	--global-color-blue-16: #16202b;
+	--global-color-blue-17: #101820;
+	--global-color-blue-18: #0b1015;
+	--global-color-blue-19: #05080b;
+
+	--global-color-cyan-1: #ecfcfd;
+	--global-color-cyan-2: #d9f8fa;
+	--global-color-cyan-3: #c7f5f8;
+	--global-color-cyan-4: #b4f1f5;
+	--global-color-cyan-5: #a1eef3;
+	--global-color-cyan-6: #8eebf0;
+	--global-color-cyan-7: #7be7ee;
+	--global-color-cyan-8: #69e4eb;
+	--global-color-cyan-9: #56e0e9;
+	--global-color-cyan-10: #43dde6;
+	--global-color-cyan-11: #3cc7cf;
+	--global-color-cyan-12: #36b1b8;
+	--global-color-cyan-13: #2f9ba1;
+	--global-color-cyan-14: #28858a;
+	--global-color-cyan-15: #226f73;
+	--global-color-cyan-16: #1b585c;
+	--global-color-cyan-17: #144245;
+	--global-color-cyan-18: #0d2c2e;
+	--global-color-cyan-19: #071617;
+
+	--global-o-row: calc(50vh - 304px);
+	--global-color-dark-transparent-background: rgba(72, 72, 72, 0.9); /* hexadecimal transparency doesn't work in MS Edge */
+}
+
+/*------------------------------------*\
+	GENERIC
+	\*------------------------------------*/
+
+/*
+		Generic: Page
+		---
+		Global page styles + universal box-sizing:
+	*/
+
+html {
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: 'Ubuntu', Helvetica, arial, sans-serif;
+	color: var(--color-alpha);
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #8dbf38;
+}
+
+body {
+	margin: 0;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/*
+	  * Remove text-shadow in selection highlight:
+	  * https://twitter.com/miketaylr/status/12228805301
+	  *
+	  * Customize the background color to match your design.
+	  */
+
+::-moz-selection {
+	background: var(--global-color-alpha-blue-dark);
+	color: var(--global-color-white);
+	text-shadow: none;
+}
+
+::selection {
+	background: var(--global-color-alpha-blue-dark);
+	color: var(--global-color-white);
+	text-shadow: none;
+}
+
+/*------------------------------------*\
+	  Elements
+	  \*------------------------------------*/
+
+/*
+	  Elements: Images
+	  ---
+	  Default markup for images to make them responsive
+	  */
+
+img {
+	max-width: 100%;
+	vertical-align: top;
+}
+
+/*
+		  Elements: typography
+		  ---
+		  Default markup for typographic elements
+	  */
+
+h1,
+h2,
+h3 {
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 36px;
+	line-height: 48px;
+	margin: 0 0 0px;
+}
+
+h2 {
+	font-size: 32px;
+	line-height: 40px;
+	margin: 0 0 24px;
+}
+
+h3 {
+	font-size: 26px;
+	line-height: 32px;
+	margin: 0 0 24px;
+}
+
+h4,
+h5,
+h6 {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+	margin: 0 0 24px;
+}
+
+p,
+ol,
+ul,
+dl,
+table,
+address,
+figure {
+	margin: 0 0 24px;
+}
+
+ul,
+ol {
+	padding-left: 24px;
+}
+
+li ul,
+li ol {
+	margin-bottom: 0;
+}
+
+blockquote {
+	font-style: normal;
+	font-size: 23px;
+	line-height: 32px;
+	margin: 0 0 24px;
+}
+
+blockquote * {
+	font-size: inherit;
+	line-height: inherit;
+}
+
+figcaption {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 16px;
+	margin-top: 8px;
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	background: LightGrey;
+	margin: 0 0 24px;
+}
+
+a {
+	transition: all var(--transition-alpha);
+	color: var(--color-alpha);
+	outline-color: var(--color-alpha);
+	outline-width: medium;
+	outline-offset: 2px;
+}
+
+a:visited,
+a:active {
+	color: var(--global-color-white);
+}
+
+a:hover,
+a:focus {
+	color: var(--color-alpha-light);
+}
+
+label,
+input {
+	display: block;
+}
+
+select {
+	width: 100%;
+}
+
+input::placeholder {
+	color: var(--color-neutral-light);
+}
+
+canvas {
+	display: block;
+	margin: auto;
+	cursor: none;
+}
+
+/*------------------------------------*\
+	  OBJECTS
+	  \*------------------------------------*/
+
+/*
+		  Objects: Row
+		  ---
+		  Creates a horizontal row that stretches the viewport and adds padding around children
+	  */
+
+.o-row {
+	padding-top: var(--global-o-row);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*
+		  Objects: Container
+		  ---
+		  Creates a horizontal container that sets de global max-width
+	  */
+
+.o-container {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*
+		  Objects: List
+		  ---
+		  Small reusable object to remove default list styling from lists
+	  */
+
+.o-list {
+	list-style: none;
+	padding: 0;
+}
+
+/*
+		  Object: Button reset
+		  ---
+		  Small button reset object
+	  */
+
+.o-button-reset {
+	border: none;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	overflow: visible;
+	background: transparent;
+
+	/* inherit font & color from ancestor */
+	color: inherit;
+	font: inherit;
+
+	/* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+	line-height: normal;
+
+	/* Corrects font smoothing for webkit */
+	-webkit-font-smoothing: inherit;
+	-moz-osx-font-smoothing: inherit;
+
+	/* Corrects inability to style clickable `input` types in iOS */
+	-webkit-appearance: none;
+}
+
+/*
+		  Object: Hide accessible
+		  ---
+		  Accessibly hide any element
+	  */
+
+.o-hide-accessible {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+/*------------------------------------*\
+	  COMPONENTS
+  \*------------------------------------*/
+
+.c-canvas {
+	position: relative;
+}
+
+.c-center {
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 0px;
+	margin: auto;
+}
+
+.c-center__item {
+	position: absolute;
+	color: var(--global-color-black);
+	text-align: center;
+	border-radius: 3px;
+	font-size: 24px;
+	top: 28px;
+}
+
+.c-level {
+	left: 64px;
+	background-color: var(--global-color-white);
+	height: 32px;
+	width: 118px;
+}
+
+.c-score {
+	right: 16px;
+	width: 10em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.c-score-bg {
+	position: relative;
+}
+
+.c-score-bg__image {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 200px;
+	height: 48px;
+}
+
+.c-score-text {
+	position: absolute;
+	top: 6px;
+	left: 24px;
+}
+
+.c-avatar {
+	border-radius: 100px;
+}
+
+.c-avatar__image {
+	width: 64px;
+}
+
+.c-dark-transparent-div {
+	background-color: var(--global-color-dark-transparent-background);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+.c-vragen {
+	position: relative;
+	z-index: 1;
+	margin-bottom: 64px;
+}
+
+.c-vragen,
+.c-vragen-progress-bar__background {
+	width: 608px;
+}
+
+.c-vragen-progress-text {
+	color: var(--global-color-grey-12);
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 20px;
+	float: right;
+	position: relative;
+	bottom: 24px;
+}
+
+.c-vragen-progress-bar__background {
+	background-color: var(--global-color-pink-8);
+	height: 22px;
+	margin-bottom: 40px;
+	border-radius: 10px;
+	border: 3px solid var(--global-color-grey-18);
+}
+
+.c-vragen-progress-bar {
+	background-color: var(--global-color-pink-16);
+	height: 18px;
+	margin: -1px;
+	width: 0px;
+	border-radius: 10px;
+	border: 1px solid var(--global-color-grey-18);
+	border-right: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	transition: 500ms ease-in-out;
+}
+
+.c-vragen__content {
+	background-color: var(--global-color-white);
+	border: 2px solid var(--global-color-grey-8);
+	border-radius: 3px;
+	padding-top: 24px;
+	font-size: 24px;
+}
+
+.c-vragen-title {
+	color: var(--global-color-grey-18);
+	margin-bottom: 24px;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 20px;
+}
+
+.c-vragen-horizontal-line {
+	border-bottom: 2px solid var(--global-color-blue-7);
+	margin-bottom: 32px;
+}
+
+.c-vragen-vraaginhoud {
+	margin: 0 30px 40px;
+	font-weight: 600;
+	font-size: 32px;
+	color: var(--global-color-alpha-blue-dark);
+	line-height: 39px;
+}
+
+.c-vragen-title,
+.c-vragen-vraaginhoud {
+	text-align: center;
+	font-family: 'Signika';
+}
+
+.c-vragen-antwoorden {
+	font-weight: 500;
+	line-height: 28px;
+	margin-bottom: 40px;
+}
+
+.c-vragen-title,
+.c-vragen-vraaginhoud,
+.c-vragen-antwoorden {
+	padding: 0 40px;
+}
+
+.c-vragen-antwoord {
+	background-color: var(--global-color-grey-6);
+	color: var(--global-color-alpha-blue-dark);
+	margin-bottom: 16px;
+	padding: 7px 16px 6px;
+	cursor: pointer;
+	border-radius: 3px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.c-vragen-antwoord:hover {
+	background-color: var(--global-color-alpha-blue-dark);
+	color: var(--global-color-white);
+}
+
+.c-vragen-antwoord__correct,
+.c-button__next {
+	background-color: var(--global-color-alpha-blue-light);
+	color: var(--global-color-white);
+	border: 1px solid var(--global-color-cyan-12);
+}
+
+.c-vragen-antwoord__correct:hover,
+.c-button__next:hover {
+	background-color: var(--global-color-cyan-8);
+	border-color: var(--global-color-cyan-10);
+}
+
+.c-vragen-antwoord__fout:hover,
+.c-button__home:hover {
+	background-color: var(--global-color-pink-8);
+	border: 1px solid var(--global-color-alpha-pink);
+}
+
+.c-svg__check-mark,
+.c-svg__cross,
+.c-svg__arrow {
+	fill: var(--global-color-white);
+}
+
+.c-svg__check-mark {
+	width: 25px;
+	height: 16.87px;
+}
+
+.c-svg__cross,
+.c-svg__arrow {
+	width: 24px;
+	height: 24px;
+}
+
+.c-nav {
+	margin: 0px 40px 40px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.c-button {
+	font-size: bold;
+	cursor: pointer;
+	border-radius: 3px;
+	display: flex;
+	align-items: center;
+	padding: 16px 36px;
+}
+
+.c-vragen-antwoord__fout,
+.c-button__home {
+	background-color: var(--global-color-alpha-pink);
+	border: 1px solid var(--global-color-pink-12);
+	color: var(--global-color-white);
+}
+
+.c-button__next {
+	background-color: var(--global-color-alpha-blue-light);
+	border: 1px solid var(--global-color-cyan-12);
+}
+
+.c-svg__home,
+.c-svg__replay {
+	fill: var(--global-color-white);
+	margin-left: 2px;
+}
+
+.c-overzicht__item-antwoorden {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	color: var(--global-color-alpha-blue-dark);
+	font-family: 'Signika';
+}
+
+.c-overzicht__item-antwoorden__item {
+	background-color: var(--global-color-grey-6);
+	border: 1px solid var(--global-color-grey-8);
+	border-radius: 3px;
+	padding: 8.7px 16px 11.3px;
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	font-weight: 600;
+}
+
+.c-overzicht__item-antwoorden__item__header {
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.c-overzicht__item-antwoorden__item__body {
+	line-height: 24px;
+}
+
+@media (max-width: 1536px) {
+	.c-vragen,
+	.c-vragen-progress-bar__background {
+		width: 508px;
+	}
+
+	.c-vragen__content {
+		padding-top: 19.2px;
+		font-size: 19.2px;
+	}
+
+	.c-vragen-progress-text,
+	.c-vragen__content {
+		font-size: 19.2px;
+	}
+
+	.c-vragen__content {
+		padding-top: 19.2px;
+	}
+
+	.c-vragen-title {
+		margin-bottom: 19.2px;
+		font-size: 32px;
+	}
+
+	.c-vragen-antwoord {
+		margin-bottom: 12.8px;
+		padding: 5.6px 12.8px 4.8px;
+	}
+
+	.c-nav {
+		margin: 0 40px 32px;
+	}
+
+	.c-svg__home,
+	.c-svg__replay {
+		width: 19.2px;
+		height: 19.2px;
+	}
+
+	.c-svg__check-mark {
+		width: 20px;
+		height: 13.5px;
+	}
+
+	.c-svg__cross {
+		width: 19.2px;
+		height: 19.2px;
+	}
+
+	.c-vragen-vraaginhoud {
+		font-size: 25.6px;
+	}
+
+	.c-button {
+		padding: 12.8px 28.8px;
+	}
+
+	.c-overzicht__item-antwoorden__item__header {
+		font-size: 12.8px;
+		line-height: 16px;
+	}
+
+	.c-overzicht__item-antwoorden__item__body {
+		line-height: 19.2px;
+	}
+
+	.c-center__item {
+		font-size: 19.15px;
+	}
+
+	.c-level {
+		height: 25px;
+		width: 94.16px;
+		left: 64px;
+	}
+
+	.c-score-text {
+		left: 19.15px;
+		top: 4.79px;
+	}
+
+	.c-score-bg__image {
+		width: 150.02px;
+		height: 38.3px;
+	}
+
+	.c-avatar__image {
+		width: 64px;
+	}
+}
+
+@media (max-width: 1280px) {
+	.c-vragen,
+	.c-vragen-progress-bar__background {
+		width: 408px;
+	}
+
+	.c-vragen-progress-text,
+	.c-vragen__content {
+		font-size: 16px;
+	}
+
+	.c-vragen__content {
+		padding: 16px 0;
+		font-size: 16px;
+	}
+
+	.c-vragen-title,
+	.c-vragen-vraaginhoud,
+	.c-vragen-antwoorden,
+	.c-nav {
+		padding: 0 26px;
+	}
+
+	.c-vragen-antwoord {
+		margin-bottom: 10.7px;
+		padding: 4.6px 10.7px 4px;
+	}
+
+	.c-nav {
+		margin: 0 0 26px;
+	}
+
+	.c-svg__home,
+	.c-svg__replay {
+		width: 16px;
+		height: 16px;
+	}
+
+	.c-svg__check-mark {
+		width: 16.5px;
+		height: 11.36px;
+	}
+
+	.c-svg__cross {
+		width: 15.84px;
+		height: 15.84px;
+	}
+
+	.c-vragen-vraaginhoud {
+		font-size: 21.12px;
+	}
+
+	.c-button {
+		padding: 10.56px 23.76px;
+	}
+
+	.c-overzicht__item-antwoorden__item__header {
+		font-size: 10.56px;
+		line-height: 13.2px;
+	}
+
+	.c-overzicht__item-antwoorden__item__body {
+		line-height: 15.84px;
+	}
+
+	.c-center__item {
+		font-size: 15.96px;
+	}
+
+	.c-level {
+		height: 20px;
+		width: 78.47px;
+		left: 32px;
+	}
+
+	.c-score-text {
+		left: 15.96px;
+		top: 3.99px;
+	}
+
+	.c-score-bg__image {
+		width: 125.02px;
+		height: 31.92px;
+	}
+
+	.c-avatar__image {
+		width: 56px;
+	}
+}
+
+@media (min-width: 2560px) {
+	.c-vragen,
+	.c-vragen-progress-bar__background {
+		width: 816px;
+	}
+
+	.c-vragen-progress-text,
+	.c-vragen__content {
+		font-size: 32px;
+	}
+
+	.c-vragen__content {
+		padding: 32px 0;
+		font-size: 32px;
+	}
+
+	.c-vragen-title,
+	.c-vragen-vraaginhoud,
+	.c-vragen-antwoorden,
+	.c-nav {
+		padding: 0 52px;
+	}
+
+	.c-vragen-antwoord {
+		margin-bottom: 21.4px;
+		padding: 9.2px 21.4px 8px;
+	}
+
+	.c-nav {
+		margin: 0 0 52px;
+	}
+
+	.c-svg__home,
+	.c-svg__replay {
+		width: 32px;
+		height: 32px;
+	}
+
+	.c-svg__check-mark {
+		width: 33px;
+		height: 22.72px;
+	}
+
+	.c-svg__cross {
+		width: 31.68px;
+		height: 31.68px;
+	}
+
+	.c-vragen-vraaginhoud {
+		font-size: 42.24px;
+	}
+
+	.c-button {
+		padding: 21.12px 47.52px;
+	}
+
+	.c-vragen-progress-bar__background {
+		height: 29.26px;
+	}
+
+	.c-vragen-progress-bar {
+		height: 23.94px;
+	}
+
+	.c-overzicht__item-antwoorden__item__header {
+		font-size: 21.28px;
+		line-height: 26.6px;
+	}
+
+	.c-overzicht__item-antwoorden__item__body {
+		line-height: 31.92px;
+	}
+
+	.c-center__item {
+		font-size: 31.92px;
+	}
+
+	.c-level {
+		height: 42.56px;
+		width: 156.94px;
+		left: 40px;
+	}
+
+	.c-score {
+		width: 10.64em;
+	}
+
+	.c-score-text {
+		left: 31.92px;
+		top: 7.98px;
+	}
+
+	.c-score-bg__image {
+		width: 250.04px;
+		height: 63.84px;
+	}
+
+	.c-avatar__image {
+		width: 85.12px;
+	}
+}
+
+/*------------------------------------*\
+	  UTILITIES
+	  \*------------------------------------*/
+
+/*
+		  Utilities: spacing
+		  ---
+		  Utility classes specific spacing column elements
+	  */
+
+.u-x-column-1-of-2 {
+	grid-column: span 2;
+}
+
+.u-x-column-1-of-3 {
+	grid-column: span 12;
+}
+
+@media (min-width: 786px) {
+	.u-x-column-1-of-3 {
+		grid-column: span 3;
+	}
+}
+
+.u-x-column-1-of-4 {
+	grid-column: span 4;
+}
+
+.u-x-column-1-of-6 {
+	grid-column: span 6;
+}
+
+.u-x-column-1-of-8 {
+	grid-column: span 8;
+}
+
+.u-x-column-1-of-12 {
+	grid-column: span 12;
+}
+
+/*
+		  Utilities: spacing
+		  ---
+		  Utility classes specific spacing row elements
+	  */
+
+.u-x-row-1-of-2 {
+	grid-row: span 2;
+}
+
+/*
+		  Utilities: color
+		  ---
+		  Utility classes to put specific colors onto elements
+	  */
+
+.u-color-neutral {
+	color: var(--color-neutral);
+}
+
+.u-color-neutral-dark {
+	color: var(--color-neutral-dark);
+}
+
+/*
+		  Utilities: spacing
+		  ---
+		  Utility classes to put specific margins and paddings onto elements
+	  */
+
+.u-pt-clear {
+	padding-top: 0 !important;
+}
+
+.u-mb-clear {
+	margin-bottom: 0 !important;
+}
+
+.u-mb-xs {
+	margin-bottom: 4px !important;
+}
+
+.u-mb-sm {
+	margin-bottom: 8px !important;
+}
+
+.u-mb-md {
+	margin-bottom: 16px !important;
+}
+
+.u-mb-lg {
+	margin-bottom: 32px !important;
+}
+
+.u-mb-xl {
+	margin-bottom: 48px !important;
+}
+
+/*
+		  Utilities: max-width
+		  ---
+		  Utility classes to put specific max widths onto elements
+	  */
+
+.u-max-width-xs {
+	max-width: 27em !important;
+}
+
+.u-max-width-sm {
+	max-width: 39em !important;
+}
+
+.u-max-width-md {
+	max-width: 50em !important;
+}
+
+.u-max-width-lg {
+	max-width: 63.5em !important;
+}
+
+.u-max-width-none {
+	max-width: none !important;
+}
+
+/*
+		  Utilities: align
+		  ---
+		  Utility classes align text or components
+	  */
+
+.u-align-text-center {
+	text-align: center;
+}
+
+.u-align-center {
+	margin: 0 auto;
+}
+
+/*
+		  Utilities: text
+		  Utility classes to create smaller or bigger test
+	  */
+
+.u-text-sm {
+	font-size: 14px;
+}
+
+.u-hidden {
+	display: none;
+}
+
+/*------------------------------------*\
+	  MEDIA
+	  \*------------------------------------*/
+
+/*
+		  Media Queries
+		  ---
+		  EXAMPLE Media Queries for Responsive Design.
+		  These examples override the primary ('mobile first') styles.
+		  USE THEM INLINE!
+	  */
+
+/* Extra small devices (portrait phones, less than 576px)
+	  No media query since this is the default in mobile first design
+	  */
+
+/* Small devices (landscape phones, 576px and up)
+	  @media (min-width: 576px) {}
+	  */
+
+/* Medium devices (tablets, 768px and up)
+	  @media (min-width: 768px) {}
+	  */
+
+/* Large devices (landscape tablets, desktops, 992px and up)
+	  @media (min-width: 992px) {}
+	  */
+
+/* Extra large devices (large desktops, 1200px and up)
+	  @media (min-width: 1200px) {}
+	  */
+
+/*
+		  Print styles.
+		  ---
+		  Inlined to avoid the additional HTTP request:
+		  http://www.phpied.com/delay-loading-your-print-css/
+	  */
+
+@media print {
+	*,
+	*:before,
+	*:after {
+		background: transparent !important;
+		color: #000 !important;
+		/* Black prints faster:
+			  http://www.sanbeiji.com/archives/953 */
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+	a[href]:after {
+		content: ' (' attr(href) ')';
+	}
+	abbr[title]:after {
+		content: ' (' attr(title) ')';
+	}
+	/*
+		  * Don't show links that are fragment identifiers,
+		  * or use the `javascript:` pseudo protocol
+		  */
+	a[href^='#']:after,
+	a[href^='javascript:']:after {
+		content: '';
+	}
+	pre {
+		white-space: pre-wrap !important;
+	}
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+	/*
+		  * Printing Tables:
+		  * http://css-discuss.incutio.com/wiki/Printing_Tables
+		  */
+	thead {
+		display: table-header-group;
+	}
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+}

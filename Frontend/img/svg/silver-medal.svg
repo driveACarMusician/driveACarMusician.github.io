@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32.058" height="40" viewBox="0 0 32.058 40">
+  <g id="silver-medal" transform="translate(-50.828)">
+    <path id="Path_68" data-name="Path 68" d="M188.952,0h12.04L190.983,12.774h-12.04Z" transform="translate(-118.106)" fill="#0e6a8e"/>
+    <path id="Path_69" data-name="Path 69" d="M188.952,0h5.088L184.031,12.774h-5.088Z" transform="translate(-118.106)" fill="#e52e40"/>
+    <path id="Path_70" data-name="Path 70" d="M238.765,0h4.257L233.013,12.774h-4.257Z" transform="translate(-164.027)" fill="#eaeae4"/>
+    <g id="Group_2" data-name="Group 2" transform="translate(54.387 10.733)">
+      <circle id="Ellipse_5" data-name="Ellipse 5" cx="12.47" cy="12.47" r="12.47" transform="translate(0 4.326)" fill="#d2dce7"/>
+      <path id="Path_71" data-name="Path 71" d="M154.864,143.261v-3.833H166.9v3.833l2.041,1.408v-6.261a1.02,1.02,0,0,0-1.02-1.02H153.843a1.021,1.021,0,0,0-1.02,1.02v6.262Z" transform="translate(-148.413 -137.387)" fill="#d2dce7"/>
+    </g>
+    <circle id="Ellipse_6" data-name="Ellipse 6" cx="9.336" cy="9.336" r="9.336" transform="translate(57.522 18.194)" fill="#a1aebc"/>
+    <path id="Path_72" data-name="Path 72" d="M62.868,0H50.828L60.837,12.774h12.04Z" transform="translate(0)" fill="#e52e40"/>
+    <path id="Path_73" data-name="Path 73" d="M144.9,0h-5.088l10.009,12.774h5.088Z" transform="translate(-82.028)" fill="#0e6a8e"/>
+    <path id="Path_74" data-name="Path 74" d="M104.9,0h-4.257L110.65,12.774h4.257Z" transform="translate(-45.921)" fill="#eaeae4"/>
+    <path id="Path_75" data-name="Path 75" d="M212.847,262.659a3.627,3.627,0,0,1,3.845,3.576c0,3.863-5.822,5.121-5.822,7.187v.683h5.283a.772.772,0,0,1,.629.827c0,.449-.305.862-.629.862h-6.4c-.359,0-.844-.251-.844-.629v-1.743c0-2.911,5.876-4.366,5.876-7.133a1.828,1.828,0,0,0-1.94-1.887,1.659,1.659,0,0,0-1.815,1.779c0,.359-.377.719-1.006.719-.5,0-.862-.252-.862-1.06C209.163,263.917,210.888,262.659,212.847,262.659Z" transform="translate(-145.734 -242.139)" fill="#d2dce7"/>
+  </g>
+</svg>

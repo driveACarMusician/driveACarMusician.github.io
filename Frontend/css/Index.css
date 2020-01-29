@@ -1,0 +1,1221 @@
+/*------------------------------------*\
+  #FONTS
+\*------------------------------------*/
+/*------------------------------------*\
+  #GENERIC
+\*------------------------------------*/
+/*
+    Generic: Page
+    ---
+    Global page styles
+*/
+
+:root {
+  --global-color-black: black;
+  --global-color-white: white;
+
+  --global-color-alpha-pink: #364f6b;
+  --global-color-alpha-blue-dark: #364f6b;
+  --global-color-alpha-blue-light: #43dde6;
+  --global-color-alpha-white: #f0f0f0;
+  --global-color-alpha-blue: #3385ff;
+  --global-color-alpha-red: #ff3333;
+  --global-color-alpha-yellow-dark: #ffc349;
+  --global-color-alpha-yellow: #ffd172;
+  --global-color-alpha-yellow: #ffe1a4;
+
+  --global-color-grey-1: #fefefe;
+  --global-color-grey-2: #fcfcfc;
+  --global-color-grey-3: #fbfbfb;
+  --global-color-grey-4: #f9f9f9;
+  --global-color-grey-5: #f8f8f8;
+  --global-color-grey-6: #f6f6f6;
+  --global-color-grey-7: #f5f5f5;
+  --global-color-grey-8: #f3f3f3;
+  --global-color-grey-9: #f2f2f2;
+  --global-color-grey-10: #f0f0f0;
+  --global-color-grey-11: #d8d8d8;
+  --global-color-grey-12: #c0c0c0;
+  --global-color-grey-13: #a8a8a8;
+  --global-color-grey-14: #909090;
+  --global-color-grey-15: #787878;
+  --global-color-grey-16: #606060;
+  --global-color-grey-17: #484848;
+  --global-color-grey-18: #303030;
+  --global-color-grey-19: #181818;
+
+  --global-color-pink-1: #ffeef3;
+  --global-color-pink-2: #fedce7;
+  --global-color-pink-3: #fecbda;
+  --global-color-pink-4: #feb9ce;
+  --global-color-pink-5: #fea8c2;
+  --global-color-pink-6: #fd97b6;
+  --global-color-pink-7: #fd85aa;
+  --global-color-pink-8: #fd749d;
+  --global-color-pink-9: #fc6291;
+  --global-color-pink-10: #fc5185;
+  --global-color-pink-11: #e34978;
+  --global-color-pink-12: #ca416a;
+  --global-color-pink-13: #b0395d;
+  --global-color-pink-14: #973150;
+  --global-color-pink-15: #7e2943;
+  --global-color-pink-16: #652035;
+  --global-color-pink-17: #4c1828;
+  --global-color-pink-18: #32101b;
+  --global-color-pink-19: #19080d;
+
+  --global-color-blue-1: #ebedf0;
+  --global-color-blue-2: #d7dce1;
+  --global-color-blue-3: #c3cad3;
+  --global-color-blue-4: #afb9c4;
+  --global-color-blue-5: #9ba7b5;
+  --global-color-blue-6: #8695a6;
+  --global-color-blue-7: #728497;
+  --global-color-blue-8: #5e7289;
+  --global-color-blue-9: #4a617a;
+  --global-color-blue-10: #364f6b;
+  --global-color-blue-11: #314760;
+  --global-color-blue-12: #2b3f56;
+  --global-color-blue-13: #26374b;
+  --global-color-blue-14: #202f40;
+  --global-color-blue-15: #1b2836;
+  --global-color-blue-16: #16202b;
+  --global-color-blue-17: #101820;
+  --global-color-blue-18: #0b1015;
+  --global-color-blue-19: #05080b;
+
+  --global-color-cyan-1: #ecfcfd;
+  --global-color-cyan-2: #d9f8fa;
+  --global-color-cyan-3: #c7f5f8;
+  --global-color-cyan-4: #b4f1f5;
+  --global-color-cyan-5: #a1eef3;
+  --global-color-cyan-6: #8eebf0;
+  --global-color-cyan-7: #7be7ee;
+  --global-color-cyan-8: #69e4eb;
+  --global-color-cyan-9: #56e0e9;
+  --global-color-cyan-10: #43dde6;
+  --global-color-cyan-11: #3cc7cf;
+  --global-color-cyan-12: #36b1b8;
+  --global-color-cyan-13: #2f9ba1;
+  --global-color-cyan-14: #28858a;
+  --global-color-cyan-15: #226f73;
+  --global-color-cyan-16: #1b585c;
+  --global-color-cyan-17: #144245;
+  --global-color-cyan-18: #0d2c2e;
+  --global-color-cyan-19: #071617;
+
+  --global-border-radius: 3px;
+  --transition-alpha: 0.1s ease-in-out;
+  --global-overlay-instellingen-padding: calc(50vh - 234px);
+  --global-overlay-start-padding: calc(50vh - 141px);
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Signika', 'Ubuntu', Helvetica, arial, sans-serif;
+  color: #111;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../img/jpg/kids.jpg');
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+::selection {
+  background: #364f6b;
+  color: white;
+  text-shadow: none;
+}
+
+/*------------------------------------*\
+  #Elements
+\*------------------------------------*/
+/*
+    Elements: Images
+    ---
+    Default markup for images to make them responsive
+*/
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+/*
+    Elements: typography
+    ---
+    Default markup for typographic elements
+*/
+h1 {
+  font-size: 104px;
+  font-weight: 700;
+  height: 152px;
+  margin: 0;
+  color: #364f6b;
+}
+
+h2 {
+  font-size: 23px;
+  line-height: 32px;
+  margin: 0 0 24px;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 0 24px;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 24px;
+}
+
+p,
+ol,
+ul,
+dl,
+table,
+address,
+figure {
+  margin: 0 0 24px;
+}
+
+ul,
+ol {
+  padding-left: 24px;
+}
+
+li ul,
+li ol {
+  margin-bottom: 0;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 23px;
+  line-height: 32px;
+  margin: 0 0 24px;
+  font-family: 'Times New Roman', serif;
+}
+
+blockquote * {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+figcaption {
+  font-size: 12px;
+  line-height: 16px;
+  padding-top: 8px;
+  color: Grey;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: LightGrey;
+  margin: 0 0 24px;
+}
+
+a {
+  color: RoyalBlue;
+  transition: all 0.1s ease-in-out;
+  text-decoration: none;
+}
+
+a:visited,
+a:active {
+  color: BlueViolet;
+}
+
+a:hover,
+a:focus {
+  color: Crimson;
+}
+
+::placeholder {
+  font-family: 'Ubuntu';
+  font-size: 24px;
+  font-weight: 500;
+  color: #c0c0c0;
+}
+
+/*------------------------------------*\
+  #OBJECTS
+\*------------------------------------*/
+/*
+    Object: Object name
+    ---
+    Object description
+*/
+/*
+    Objects: Row
+    ---
+    Creates a horizontal row that stretches the viewport and adds padding around children
+*/
+.o-row {
+  margin: auto;
+  padding: 16px 32px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.o-row--title {
+  padding-top: 128px;
+  padding-bottom: 40px;
+}
+
+.o-row--dashboard {
+  position: relative;
+  padding-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.o-row--overlay__start {
+  padding: var(--global-overlay-start-padding) 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.o-row--overlay__instellingen {
+  padding: var(--global-overlay-instellingen-padding) 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.o-row--primary {
+  color: white;
+  background: #e85e00;
+}
+
+.o-row--dark {
+  color: white;
+  background: #364f6b;
+}
+
+.o-button-reset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+}
+
+@media (min-width: 768px) {
+  .o-row--lg {
+    padding: 48px 48px 24px;
+  }
+}
+
+@media (max-width: 1536px) {
+  body {
+    zoom: 80%;
+  }
+}
+
+/*
+    Objects: Container
+    ---
+    Creates a horizontal container that sets de global max-width
+*/
+.o-container {
+  /* margin: 0px 424px; */
+  margin: 0 auto;
+}
+
+.o-container--card {
+  margin: 0 auto;
+}
+/*
+    Objects: Layout
+    ---
+    The layout object provides us with a column-style layout system. This object
+    contains the basic structural elements, but classes should be complemented
+    with width utilities
+*/
+.o-layout {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex: wrap;
+}
+
+.o-layout__item {
+  width: 100%;
+}
+
+/* gutter modifiers, these affect o-layout__item too */
+.o-layout--gutter {
+  margin: 0 -12px;
+}
+
+.o-layout--gutter > .o-layout__item {
+  padding: 0 12px;
+}
+
+.o-layout--gutter-sm {
+  margin: 0 -6px;
+}
+
+.o-layout--gutter-sm > .o-layout__item {
+  padding: 0 6px;
+}
+
+.o-layout--gutter-lg {
+  margin: 0 -24px;
+}
+
+.o-layout--gutter-lg > .o-layout__item {
+  padding: 0 24px;
+}
+
+/* reverse horizontal row modifier */
+.o-layout--row-reverse {
+  flex-direction: row-reverse;
+}
+
+/* Horizontal alignment modifiers*/
+.o-layout--justify-start {
+  justify-content: flex-start;
+}
+
+.o-layout--justify-end {
+  justify-content: flex-end;
+}
+
+.o-layout--justify-center {
+  justify-content: center;
+}
+
+.o-layout--justify-space-around {
+  justify-content: space-around;
+}
+
+.o-layout--justify-space-evenly {
+  justify-content: space-evenly;
+}
+
+/* Vertical item alignment modifiers */
+.o-layout--align-start {
+  align-items: flex-start;
+}
+
+.o-layout--align-end {
+  align-items: flex-end;
+}
+
+.o-layout--align-center {
+  align-items: center;
+}
+
+.o-layout--align-baseline {
+  align-items: baseline;
+}
+
+/* Vertical content alignment modifiers. Only work if there is one than one flex item */
+.o-layout--align-content-start {
+  align-content: flex-start;
+}
+
+.o-layout--align-content-end {
+  align-content: flex-end;
+}
+
+.o-layout--align-content-center {
+  align-content: center;
+}
+
+.o-layout--align-content-space-around {
+  align-content: space-around;
+}
+
+.o-layout--align-content-space-between {
+  align-content: space-between;
+}
+
+/*------------------------------------*\
+  #COMPONENTS
+\*------------------------------------*/
+/*
+    Component: Component name
+    ---
+    Component description
+*/
+
+.c-footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.c-title {
+  display: flex;
+  justify-content: center;
+}
+
+.c-dashboard {
+  display: grid;
+  grid-column-gap: 64px;
+  margin-bottom: 16px;
+  grid-template-columns: repeat(2, 1fr);
+  width: 1072px;
+}
+
+.c-dashboard__item {
+  background-color: white;
+  box-shadow: 5 5 10;
+  border-radius: var(--global-border-radius);
+  height: 280px;
+  cursor: pointer;
+}
+
+.c-dashboard__item--start:hover {
+  background-color: #fd749d;
+  border: 1px solid #fc5185;
+}
+
+.c-dashboard__item--instellingen:hover {
+  background-color: #69e4eb;
+  border: 1px solid #43dde6;
+}
+
+.c-display--buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+}
+
+.c-dashboard__item--start {
+  color: white;
+  font-family: 'Ubuntu';
+  font-size: 40px;
+  font-weight: 700;
+  background-color: #fc5185;
+  border: 1px solid #ca416a;
+}
+
+.c-dashboard--title {
+  width: 174px;
+  margin: 0px;
+  padding: 110px 0px;
+}
+
+.c-dashboard--instellingen {
+  margin: 0px;
+  padding: 110px 0px;
+}
+
+.c-dashboard__item--instellingen {
+  color: white;
+  font-family: 'Ubuntu';
+  font-size: 40px;
+  font-weight: 700;
+  background-color: #43dde6;
+  border: 1px solid #36b1b8;
+}
+
+.c-logo {
+  display: flex;
+  justify-content: flex-end;
+  height: 48px;
+}
+
+.c-symbol {
+  height: 160px;
+  width: 175px;
+}
+
+.c-logo__symbol-mct {
+  height: 48px;
+  width: 100px;
+  padding: 0 12px;
+}
+
+.c-logo__symbol-howest {
+  height: 48px;
+  width: 100px;
+  padding: 0 12px;
+}
+
+.c-logo__symbol-campus {
+  height: 48px;
+  width: 120px;
+  padding: 0 12px;
+}
+
+.c-logo__symbol-sport {
+  height: 48px;
+  width: 150px;
+  padding: 0 12px;
+}
+
+.c-dark-transparent-div {
+  background-color: rgba(72, 72, 72, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/*
+    Component: Card
+    ---
+    Card with box shadow
+*/
+
+.c-card {
+  position: relative;
+  background-color: white;
+  border: 1px solid #c0c0c0;
+  border-radius: var(--global-border-radius);
+  box-shadow: 5 5 10;
+  overflow: hidden;
+}
+
+.c-card__body {
+  padding: 40px;
+}
+
+.c-form-field {
+  padding-bottom: 24px;
+  margin: 0px;
+  position: relative;
+}
+
+.c-form-field--button {
+  padding-top: 8px;
+  margin-bottom: 24px;
+}
+
+.c-form-field--link {
+  color: var(--global-color-alpha-blue-dark);
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Ubuntu';
+  text-decoration: underline;
+  outline: none;
+  cursor: pointer;
+}
+
+.c-form-field--link:visited {
+  color: var(--global-color-alpha-blue-dark);
+}
+
+.c-form-field--link:focus,
+.c-form-field--link:active,
+.c-form-field--link:hover {
+  color: var(--global-color-blue-8);
+}
+
+.c-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 448px;
+  height: 64px;
+  border: 1px solid #c0c0c0;
+  border-radius: var(--global-border-radius);
+  background-color: #fff;
+  color: #606060;
+  font-family: 'Ubuntu';
+  font-size: 24px;
+  font-weight: 500;
+  padding: 16px;
+  outline: none;
+  box-shadow: var(--inset-shadow);
+  transition: border var(--transition-alpha);
+}
+
+.c-input:hover {
+  border-color: var(--color-neutral-xx-light);
+}
+
+.c-input:focus,
+.c-input:active {
+  border-color: #36b1b8;
+  box-shadow: 0 0 0 3px #43dde6;
+}
+
+/*
+    Component: Password Toggle
+    ---
+    Password toggle custom checkbox
+*/
+.c-password-toggle__button {
+  display: none;
+}
+
+.c-password-toggle__icon {
+  cursor: pointer;
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  top: 0px;
+  right: 0px;
+  margin: 20px 20px 0px 0px;
+  fill: var(--global-color-grey-16);
+}
+
+.c-password-toggle__icon-hide {
+  opacity: 0;
+}
+
+.c-password-toggle__button:checked + .c-password-toggle__label .c-password-toggle__icon {
+  opacity: 1;
+}
+
+/*
+    Component: Label
+    ---
+    label stuff
+*/
+.c-label {
+  font-family: 'Ubuntu';
+  font-size: 20px;
+  color: var(--global-color-grey-16);
+}
+
+.c-label--floating {
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  padding: 4px 8px;
+  will-change: transform;
+  transform: translateY(0);
+  transition: transform 200ms ease-in-out;
+  background: white;
+}
+
+.c-form-field:focus-within .c-label--floating,
+.js-keep-floating {
+  transform: translateY(-32px);
+}
+
+/*
+    Component: Button
+    ---
+    Class to put on form buttons or
+*/
+
+.c-button {
+  font-family: 'Ubuntu';
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: var(--global-border-radius);
+  border: 1px solid #36b1b8;
+  background-color: #43dde6;
+  color: #fff;
+  padding: 16px;
+  width: 200px;
+  height: 64px;
+  outline: none;
+  transition: all var(--transition-alpha);
+  cursor: pointer;
+}
+
+.c-button__bevestig {
+  font-family: 'Ubuntu';
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: var(--global-border-radius);
+  border: 1px solid #36b1b8;
+  background-color: #43dde6;
+  color: #fff;
+  padding: 16px;
+  width: 448px;
+  height: 64px;
+  outline: none;
+  transition: all var(--transition-alpha);
+  cursor: pointer;
+}
+
+.c-button__bevestig:hover,
+.c-button:hover {
+  background-color: #69e4eb;
+}
+
+.c-button__bevestig:focus,
+.c-button:focus {
+  background-color: #43dde6;
+  box-shadow: 0 0 0 3px #36b1b8;
+}
+
+.c-button__bevestig:active,
+.c-button:active {
+  background-color: #43dde6;
+  box-shadow: none;
+}
+
+.c-icon--close {
+  cursor: pointer;
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  top: 16px;
+  right: 16px;
+}
+
+.c-naam {
+  color: #ff3333;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  padding-bottom: 18px;
+}
+
+.c-wachtwoord {
+  color: #ff3333;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  padding-bottom: 18px;
+}
+
+/*------------------------------------*\
+  #UTILITIES
+\*------------------------------------*/
+/*
+    Utility: Utility name
+    ---
+    Utility description
+*/
+
+/*
+    Utilities: spacing
+    ---
+    Utility classes specific spacing column elements
+*/
+
+.u-x-column-1-of-2 {
+  grid-column: span 2;
+}
+
+.u-x-column-1-of-3 {
+  grid-column: span 3;
+}
+
+.u-x-column-1-of-4 {
+  grid-column: span 4;
+}
+
+.u-x-column-1-of-6 {
+  grid-column: span 6;
+}
+
+/*
+      Utilities: spacing
+      ---
+      Utility classes specific spacing row elements
+  */
+
+.u-x-row-1-of-4 {
+  grid-row: span 4;
+}
+
+/*
+    Utilities: max-width
+    ---
+    Utility classes to put specific max widths onto elements.
+*/
+.u-max-width-sm {
+  max-width: 36em !important;
+}
+
+.u-max-width-md {
+  max-width: 45em;
+}
+
+.u-max-width-lg {
+  max-width: 60em;
+}
+
+.u-max-width-xl {
+  max-width: 75em;
+}
+
+.u-max-width-none {
+  max-width: none;
+}
+
+/*
+    Utility: Widths
+    ---
+    Utility classes to put specific widths onto elements
+    Will be mostly used on o-layout__item
+*/
+.u-width-auto {
+  width: auto;
+}
+
+.u-1-of-2 {
+  width: 50%;
+}
+
+.u-1-of-3 {
+  width: 33.3333333333%;
+}
+
+.u-2-of-3 {
+  width: 66.6666666667%;
+}
+
+.u-1-of-4 {
+  width: 25%;
+}
+
+.u-3-of-4 {
+  width: 75%;
+}
+
+.u-1-of-5 {
+  width: 20%;
+}
+
+.u-2-of-5 {
+  width: 40%;
+}
+
+.u-3-of-5 {
+  width: 60%;
+}
+
+.u-4-of-5 {
+  width: 80%;
+}
+
+.u-1-of-6 {
+  width: 16.6666666667%;
+}
+
+.u-5-of-6 {
+  width: 83.3333333333%;
+}
+
+@media (min-width: 576px) {
+  .u-1-of-2-bp1 {
+    width: 50%;
+  }
+
+  .u-1-of-3-bp1 {
+    width: 33.3333333333%;
+  }
+
+  .u-2-of-3-bp1 {
+    width: 66.6666666667%;
+  }
+
+  .u-1-of-4-bp1 {
+    width: 25%;
+  }
+
+  .u-3-of-4-bp1 {
+    width: 75%;
+  }
+
+  .u-1-of-5-bp1 {
+    width: 20%;
+  }
+
+  .u-2-of-5-bp1 {
+    width: 40%;
+  }
+
+  .u-3-of-5-bp1 {
+    width: 60%;
+  }
+
+  .u-4-of-5-bp1 {
+    width: 80%;
+  }
+
+  .u-1-of-6-bp1 {
+    width: 16.6666666667%;
+  }
+
+  .u-5-of-6-bp1 {
+    width: 83.3333333333%;
+  }
+}
+
+@media (min-width: 768px) {
+  .u-1-of-2-bp2 {
+    width: 50%;
+  }
+
+  .u-1-of-3-bp2 {
+    width: 33.3333333333%;
+  }
+
+  .u-2-of-3-bp2 {
+    width: 66.6666666667%;
+  }
+
+  .u-1-of-4-bp2 {
+    width: 25%;
+  }
+
+  .u-3-of-4-bp2 {
+    width: 75%;
+  }
+
+  .u-1-of-5-bp2 {
+    width: 20%;
+  }
+
+  .u-2-of-5-bp2 {
+    width: 40%;
+  }
+
+  .u-3-of-5-bp2 {
+    width: 60%;
+  }
+
+  .u-4-of-5-bp2 {
+    width: 80%;
+  }
+
+  .u-1-of-6-bp2 {
+    width: 16.6666666667%;
+  }
+
+  .u-5-of-6-bp2 {
+    width: 83.3333333333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .u-1-of-2-bp3 {
+    width: 50%;
+  }
+
+  .u-1-of-3-bp3 {
+    width: 33.3333333333%;
+  }
+
+  .u-2-of-3-bp3 {
+    width: 66.6666666667%;
+  }
+
+  .u-1-of-4-bp3 {
+    width: 25%;
+  }
+
+  .u-3-of-4-bp3 {
+    width: 75%;
+  }
+
+  .u-1-of-5-bp3 {
+    width: 20%;
+  }
+
+  .u-2-of-5-bp3 {
+    width: 40%;
+  }
+
+  .u-3-of-5-bp3 {
+    width: 60%;
+  }
+
+  .u-4-of-5-bp3 {
+    width: 80%;
+  }
+
+  .u-1-of-6-bp3 {
+    width: 16.6666666667%;
+  }
+
+  .u-5-of-6-bp3 {
+    width: 83.3333333333%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .u-1-of-2-bp4 {
+    width: 50%;
+  }
+
+  .u-1-of-3-bp4 {
+    width: 33.3333333333%;
+  }
+
+  .u-2-of-3-bp4 {
+    width: 66.6666666667%;
+  }
+
+  .u-1-of-4-bp4 {
+    width: 25%;
+  }
+
+  .u-3-of-4-bp4 {
+    width: 75%;
+  }
+
+  .u-1-of-5-bp4 {
+    width: 20%;
+  }
+
+  .u-2-of-5-bp4 {
+    width: 40%;
+  }
+
+  .u-3-of-5-bp4 {
+    width: 60%;
+  }
+
+  .u-4-of-5-bp4 {
+    width: 80%;
+  }
+
+  .u-1-of-6-bp4 {
+    width: 16.6666666667%;
+  }
+
+  .u-5-of-6-bp4 {
+    width: 83.3333333333%;
+  }
+}
+
+.u-hidden {
+  display: none;
+}
+
+/*------------------------------------*\
+  #MEDIA
+\*------------------------------------*/
+/*
+    Media Queries
+    ---
+    EXAMPLE Media Queries for Responsive Design.
+    These examples override the primary ('mobile first') styles.
+    USE THEM INLINE!
+*/
+/* Extra small devices (portrait phones, less than 576px)
+   No media query since this is the default in mobile first design
+*/
+/* Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+*/
+/* Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+*/
+/* Large devices (landscape tablets, desktops, 992px and up)
+@media (min-width: 992px) {}
+*/
+/* Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
+*/
+/*
+    Print styles.
+    ---
+    Inlined to avoid the additional HTTP request:
+    http://www.phpied.com/delay-loading-your-print-css/
+*/
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: ' (' attr(href) ')';
+  }
+
+  abbr[title]:after {
+    content: ' (' attr(title) ')';
+  }
+
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^='#']:after,
+  a[href^='javascript:']:after {
+    content: '';
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

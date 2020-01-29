@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+        <link rel="manifest" href="site.webmanifest" />
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#43dde6" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link href="https://fonts.googleapis.com/css?family=Signika&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet" />
+        <link href="css/settings.css" rel="stylesheet" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/sha3.js"></script>
+        <script src="script/dataHandler.js"></script>
+        <script src="script/settings.js"></script>
+        <title>Instellingen</title>
+    </head>
+    <body class="u-overflow-hidden">
+        <div class="c-dark-transparent-div u-hidden">
+            <div class="o-row">
+                <div class="o-container__popup">
+                    <div class="c-popup">
+                        <form class="c-card--popup js-form">
+                            <svg class="c-icon--close js-close" fill="#787878" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+                                <path d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z" />
+                            </svg>
+                            <div class="c-card__body--popup">
+                                <p class="c-popup__title">Account verwijderen?</p>
+                                <p class="c-popup__description">Bent u zeker dat u uw account wilt verwijderen?</p>
+                                <div class="c-wachtwoord js-wachtwoord-error"></div>
+                                <p class="c-form-field">
+                                    <label class="c-label c-label--floating js-wachtwoord-label" for="wachtwoord">Wachtwoord</label>
+                                    <input class="c-input" type="password" name="wachtwoord" id="wachtwoord" required />
+                                    <input class="c-password-toggle__button" id="passwordtoggle" type="checkbox" />
+                                    <label class="c-password-toggle__label" for="passwordtoggle">
+                                        <svg class="c-password-toggle__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                            <path d="M6.4,133.876a11,11,0,0,1,19.571-.061l.029.061a11,11,0,0,1-19.571.061l-.029-.061Zm9.8,4a4,4,0,1,0,0-8h0a4,4,0,0,0,0,8Zm0-2a2,2,0,0,1,0-4h0a2,2,0,1,1,0,4Z" transform="translate(-6.2 -123.876)" />
+                                        </svg>
+                                        <svg class="c-password-toggle__icon c-password-toggle__icon-hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                            <path d="M19.009,73.18l-1.77,1.78a3.908,3.908,0,0,0-1.037-.137,4,4,0,0,0-3.857,5.065l-.007-.028-2.76,2.75A11.106,11.106,0,0,1,6.4,78.82,11.014,11.014,0,0,1,19.076,73.2L19,73.18Zm3.8,1.85a11.163,11.163,0,0,1,3.2,3.79,11.014,11.014,0,0,1-12.7,5.622l.077.018,1.77-1.78a3.907,3.907,0,0,0,1.037.137,4,4,0,0,0,3.857-5.065l.007.028,2.76-2.75Zm-.25-3.99,1.42,1.42L9.839,86.6l-1.42-1.42Z" transform="translate(-6.199 -68.82)" />
+                                        </svg>
+                                    </label>
+                                </p>
+                                <div class="c-nav">
+                                    <div class="c-button c-button__cancel js-button-cancel">Annuleer</div>
+                                    <div class="c-button c-button__confirm js-button-confirm">Verwijder</div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="o-row o-row__header">
+            <div class="o-container o-container__header">
+                <div class="c-header">
+                    <div class="c-header__icon" id="close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
+                        </svg>
+                    </div>
+                    <div class="c-header__title">
+                        <h2>Instellingen</h2>
+                    </div>
+                    <input type="button" class="o-button-reset c-form-field--link js-verwijder-account-link" value="Verwijder account" />
+                </div>
+            </div>
+        </div>
+
+        <div class="o-row o-row__card">
+            <div class="o-container o-container__card">
+                <div class="c-card u-overflow-x-hidden" id="card">
+                    <div class="c-card__header" style="border-bottom: 2px solid #728497;" id="header">
+                        <div class="c-card__header__title">
+                            <h2 class="c-card__title__text">Vragen</h2>
+                        </div>
+                        <div class="c-card__header__icons">
+                            <svg class="c-card__header__icon" id="add_circle-24px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                <path id="Path_108" data-name="Path 108" d="M0,0H32V32H0Z" fill="none" />
+                                <path id="Path_109" data-name="Path 109" d="M16,2A14,14,0,1,0,30,16,14.005,14.005,0,0,0,16,2Zm7,15.4H17.4V23H14.6V17.4H9V14.6h5.6V9h2.8v5.6H23Z" fill="#3385ff" />
+                            </svg>
+                            <svg class="c-card__header__icon" height="24px" width="24px" viewBox="-40 0 427 427.00131" width="427pt" xmlns="http://www.w3.org/2000/svg" id="delete">
+                                <path d="m232.398438 154.703125c-5.523438 0-10 4.476563-10 10v189c0 5.519531 4.476562 10 10 10 5.523437 0 10-4.480469 10-10v-189c0-5.523437-4.476563-10-10-10zm0 0" />
+                                <path d="m114.398438 154.703125c-5.523438 0-10 4.476563-10 10v189c0 5.519531 4.476562 10 10 10 5.523437 0 10-4.480469 10-10v-189c0-5.523437-4.476563-10-10-10zm0 0" />
+                                <path d="m28.398438 127.121094v246.378906c0 14.5625 5.339843 28.238281 14.667968 38.050781 9.285156 9.839844 22.207032 15.425781 35.730469 15.449219h189.203125c13.527344-.023438 26.449219-5.609375 35.730469-15.449219 9.328125-9.8125 14.667969-23.488281 14.667969-38.050781v-246.378906c18.542968-4.921875 30.558593-22.835938 28.078124-41.863282-2.484374-19.023437-18.691406-33.253906-37.878906-33.257812h-51.199218v-12.5c.058593-10.511719-4.097657-20.605469-11.539063-28.03125-7.441406-7.421875-17.550781-11.5546875-28.0625-11.46875h-88.796875c-10.511719-.0859375-20.621094 4.046875-28.0625 11.46875-7.441406 7.425781-11.597656 17.519531-11.539062 28.03125v12.5h-51.199219c-19.1875.003906-35.394531 14.234375-37.878907 33.257812-2.480468 19.027344 9.535157 36.941407 28.078126 41.863282zm239.601562 279.878906h-189.203125c-17.097656 0-30.398437-14.6875-30.398437-33.5v-245.5h250v245.5c0 18.8125-13.300782 33.5-30.398438 33.5zm-158.601562-367.5c-.066407-5.207031 1.980468-10.21875 5.675781-13.894531 3.691406-3.675781 8.714843-5.695313 13.925781-5.605469h88.796875c5.210937-.089844 10.234375 1.929688 13.925781 5.605469 3.695313 3.671875 5.742188 8.6875 5.675782 13.894531v12.5h-128zm-71.199219 32.5h270.398437c9.941406 0 18 8.058594 18 18s-8.058594 18-18 18h-270.398437c-9.941407 0-18-8.058594-18-18s8.058593-18 18-18zm0 0" />
+                                <path d="m173.398438 154.703125c-5.523438 0-10 4.476563-10 10v189c0 5.519531 4.476562 10 10 10 5.523437 0 10-4.480469 10-10v-189c0-5.523437-4.476563-10-10-10zm0 0" />
+                            </svg>
+                            <label class="pure-material-checkbox">
+                                <input type="checkbox" id="selectAll" />
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="c-loader__container" id="loader" style="display: flex;">
+                        <svg class="c-loader" viewbox="0 0 100 100" width="100" height="100">
+                            <circle class="c-loader__circle" cx="50" cy="50" r="40"></circle>
+                        </svg>
+                    </div>
+                    <div style="display:none" id="hideNew">
+                        <form class="c-form" id="newQuestion">
+                            
+                            <div class="c-form__header__new" id="newQuestion">
+                                <input type="text" class="c-input c-input__new" placeholder="Vraag" id="vraag" />
+                            </div>
+                            <h3>Selecteer het juiste antwoord</h3>
+                            <div class="c-form__content__item">
+                                <label class="pure-material-radio">
+                                    <input class="js-input-antwoord-checkbox${i}" type="radio" checked name="Voorbeeldvraag ${i}" id="addRadio1" for="antwoord1" />
+                                    <span></span>
+                                </label>
+                                <input class="c-input" name="antwoord1" id="addInput1" placeholder="Antwoord 1" required />
+                            </div>
+                            <div class="c-form__content__item">
+                                <label class="pure-material-radio">
+                                    <input type="radio" name="Voorbeeldvraag ${i}" id="addRadio2" for="antwoord2" />
+                                    <span></span>
+                                </label>
+                                <input class="c-input" name="antwoord2" id="addInput2" placeholder="Antwoord 2" required />
+                            </div>
+                            <div class="c-form__content__item">
+                                <label class="pure-material-radio">
+                                    <input type="radio" name="Voorbeeldvraag ${i}" id="addRadio3" for="antwoord3" />
+                                    <span></span>
+                                </label>
+                                <input class="c-input" name="antwoord3" id="addInput3" placeholder="Antwoord 3" required />
+                            </div>
+                            <div class="c-form__content__item">
+                                <label class="pure-material-radio">
+                                    <input type="radio" name="Voorbeeldvraag ${i}" id="addRadio4" for="antwoord4" />
+                                    <span></span>
+                                </label>
+                                <input class="c-input" name="antwoord 4" id="addInput4" placeholder="Antwoord 4" required />
+                            </div>
+                            <p class="c-form-field--button" id="addBtnNew">
+                                <input type="button" class="o-button-reset c-button c-button__confirm js-login" value="Opslaan" />
+                            </p>
+                        </form>
+                    </div>
+                    <div class="c-card__body" id="questions">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
