@@ -256,10 +256,16 @@ const listenToVerwijderAccount = function() {
 
 const listenToDelete = function() {
   document.getElementById('delete').addEventListener('click', function() {
-    let toDelete = [];
+    let toDelete = [], tens;
     const checkboxes = document.querySelectorAll('.js-checkbox');
     for (let i = 0; i < checkboxes.length; i++) {
-      if (checkboxes[i].checked === true && checkboxes[i].id !== 'selectAll') toDelete.push(parseInt(checkboxes[i].id.charAt(checkboxes[i].id.length - 1)));
+      if (checkboxes[i].checked === true && checkboxes[i].id !== 'selectAll') {
+        if(Number.isInteger(parseInt(checkboxes[i].id.charAt(checkboxes[i].id.length - 2)))){
+          tens = checkboxes[i].id.charAt(checkboxes[i].id.length - 2);
+          tens += checkboxes[i].id.charAt(checkboxes[i].id.length - 1);
+          toDelete.push(parseInt(tens))
+        } else toDelete.push(parseInt(checkboxes[i].id.charAt(checkboxes[i].id.length - 1)));
+      } 
     }
     console.log(toDelete);
     deleteQuestion(toDelete);
