@@ -286,7 +286,7 @@ const listenToSelectAll = function() {
 
 const listenToHeaderIcon = function() {
   domHeaderIcon.addEventListener('click', function() {
-    location.assign('Index.html');
+    location.assign('index.html');
   });
 };
 
